@@ -123,7 +123,10 @@ Feature Importance graph shows that almost all of the features are important.
 
 
 ## 8. Takeaways
-- The dataset is too small. It also with lot of missing values. After handling the missing values, we applied different models. Random Forest Classifier Accuracy : 48.72 RandomForestClassifier F1 : 40.89 Random Forest classifier showed better performance.
+- The dataset is too small. It also with lot of missing values. 
+- After handling the missing values, we applied different models. Random Forest classifier showed better performance
+    - Random Forest Classifier Accuracy : 48.72 
+    - F1 Score : 40.89 
 - As the dataset is imbalanced, using SMOTE Oversampling and handling the Class_weight, helped to improve the score. Using RandomizedSearchCV, the hyperparameters are selected, using which the accuracy increased to 49.18 with F1 score : 41.69
 - Feature Importance graph shows that almost all of the features are important.
 
