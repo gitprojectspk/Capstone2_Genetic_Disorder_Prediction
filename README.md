@@ -136,5 +136,5 @@ Feature Importance graph shows that almost all of the features are important.
 - Get balanced and correct (less missing values) data 
 - Include more parameters
 
-## 10. Crdits
+## 10. Credits
   Thank you Dipanjan Sarkar for guidance during project.
