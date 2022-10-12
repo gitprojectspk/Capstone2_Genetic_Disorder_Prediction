@@ -59,13 +59,14 @@ The model learns and predict labels for each record. If the learning was success
 ## 1. Data  
   We will analyze the dataset provided on Kaggle to predict the genetic disorder.
   This dataset contains medical information about children who have genetic disorders.
-  Source : https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-genetic-testing/
+  [Dataset](https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-genetic-testing/)
   
   ![image](https://user-images.githubusercontent.com/96436449/167469019-1f1977ab-073e-4f53-a508-5fd82b565765.png)
   
 ## 1. Data Cleaning
 [Data Wrangling](https://github.com/gitprojectspk/Capstone2_Genetic_Disorder_Prediction/blob/main/Notebooks/1.Genetic_Disorder_Prediction_data_wrangling.ipynb)
-  Original Dataset contains 22K records and 45 variables.
+ 
+ Original Dataset contains 22K records and 45 variables.
   There are few variables which are not very useful for our prediction. I dropped them.
   There are variables representing Nan or incorrect values. e.g. values like 'Not applicable', 'None', '-', 'No Record' which I replaced with Nan. 
   I renamed Columns for simplicity
@@ -76,6 +77,7 @@ The model learns and predict labels for each record. If the learning was success
  
 ## 2. Exploratory Data Analysis 
 [EDA](https://github.com/gitprojectspk/Capstone2_Genetic_Disorder_Prediction/blob/main/Notebooks/2.Genetic_Disorder_Prediction-EDA.ipynb)
+
 
 ##### Percentage Distribution of Genetic Disorder amonst the given set of childeren's data.
 
@@ -93,6 +95,7 @@ The model learns and predict labels for each record. If the learning was success
 
 ## 3. Data Preprocessing 
 [Data Preprocessing](https://github.com/gitprojectspk/Capstone2_Genetic_Disorder_Prediction/blob/main/Notebooks/3.Genetic_Disorder_Prediction-PreProcessing.ipynb)
+
 Before feeding the data to model, we need to converted the categorical column into a numerical one using One-Hot-Encoding and label encoder
 The dataset has been separated in a Train dataset (12632 samples) and a Test dataset (5415 samples). 
 The data was scaled before feeding into the respective models such as SVM, Logistic regression etc.
@@ -100,6 +103,7 @@ The data was scaled before feeding into the respective models such as SVM, Logis
 
 ## 4. Model Selection
 [Model selection](https://github.com/gitprojectspk/Capstone2_Genetic_Disorder_Prediction/blob/main/Notebooks/4.Genetic_Disorder_Prediction-Modelling.ipynb)
+
 For all the models under study, to avoid over-fitting, we optimized the corresponding hyper-parameters by a 5-fold cross-validation on the Train set. We then evaluated on the Test set the models trained on the entire Train set.
 ![image](https://user-images.githubusercontent.com/96436449/167471155-1fa538f9-d8e9-40db-962e-8bf492428a00.png)
 
